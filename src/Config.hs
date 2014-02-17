@@ -1,6 +1,10 @@
 module Config
     ( inWindowSettings
     , fullScreenSettings
+    , screenWidth
+    , screenHeight
+    , halfScreenWidth
+    , halfScreenHeight
     ) where
 
 import Graphics.Gloss
@@ -9,6 +13,10 @@ import Graphics.Gloss
 screenWidth, screenHeight :: Int
 screenWidth = 500
 screenHeight = 500
+
+halfScreenWidth, halfScreenHeight :: Float
+halfScreenWidth = fromIntegral screenWidth / 2
+halfScreenHeight = fromIntegral screenHeight / 2
 
 -- These are only needed if the game is played in a window
 screenPosH, screenPosW :: Int
